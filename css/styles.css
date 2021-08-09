@@ -2,21 +2,46 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --secondary-text-color: #ffffff;
 }
+
+/* ГОЛОВНІ СТИЛІ */
 .body {
   color: var(--primary-text-color);
 }
 .list {
   list-style: none;
 }
-/* header */
-.page-header {
-}
+/* Logo */
 .logo {
+}
+.logo.span {
+  color: var(--accent-color);
+}
+.logo.header {
   color: #000000;
 }
-.logo-span {
-  color: var(--accent-color);
+.logo.footer {
+  color: var(--secondary-text-color);
+}
+/* button */
+.button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.button.primary {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+/* СТИЛІ INDEX.HTML */
+/* header */
+.page-header {
 }
 .site-nav {
 }
@@ -25,6 +50,9 @@
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
   color: var(--accent-color);
 }
 .contacts {
@@ -39,10 +67,10 @@
 /* main */
 /* Прев'ю сайту */
 .hero {
-  background: #2f303a;
+  background-color: #2f303a;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 /* section */
 .section {
@@ -66,5 +94,29 @@
 .team-list {
 }
 .team-list .title {
+  color: var(--title-text-color);
+}
+/* footer */
+/* Підвал */
+.footer {
+  background-color: #2f303a;
+}
+.footer-list {
+}
+.footer-list .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list .link-address {
+  color: var(--secondary-text-color);
+}
+
+/* СТИЛЫ ДЛЯ portfolio.html */
+/* Фільтра сторінки */
+.button-list {
+}
+/* Фото в портфолыо */
+.examples-list {
+}
+.examples-list .title {
   color: var(--title-text-color);
 }
